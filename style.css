@@ -1,0 +1,116 @@
+/* Master styles*/
+body{
+    font-family: 'Kufam', cursive;
+    margin: 0px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+/*nav styles*/
+.navwrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+    text-transform: uppercase;
+}
+.navlinkwrapper{
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.leftside{
+    display: flex;
+
+}
+.navwrapper > .leftside > div{
+    margin-right: 20px;
+    font-size: 0.9em;
+    
+}
+.navlinkwrapper a{
+    color:gray;
+    text-decoration: none;
+    transition: color 0.5s;
+
+}
+.navlinkwrapper:hover{
+    border-bottom: 1px solid black;
+}
+.navlinkwrapper a:hover{
+    color: black;
+}
+
+/*image styles*/
+.itemswrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.itemwrapper{
+    position: relative;
+}
+.imagebg{
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.imagetextwrapper{
+    position: absolute;
+    top:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.logowrapper img{
+    width: 50%;
+    margin-bottom: 20px;
+
+}
+/*Selector should be more specific*/
+.imagetextwrapper .subtitle{
+    transition: 0s;
+    font-weight: 600;
+    color: transparent;
+}
+
+.imagetextwrapper:hover .subtitle{
+    font-weight: 600;
+    color: lightseagreen;
+}
+.imgdarken{
+    transition: 0s;
+    filter: brightness(10%);
+}
+/*About page styles*/
+.twocolumnwrapper{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.profilewrapperimg{
+    display: block;
+    margin-left: 40%;
+    margin-right: auto;
+    margin-bottom: 10%;
+   
+    width: 10%;
+    height: 20%;
+}
+.profilecontentwrapper{
+    margin-top: 20%;
+    justify-content: left;
+    padding: 30px;
+
+}
+.profilecontentwrapper h1{
+    color: lightseagreen;
+}
+.contentwhite{
+    color: white;
+}
