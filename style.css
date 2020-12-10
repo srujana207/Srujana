@@ -2,6 +2,7 @@
 body{
     font-family: 'Kufam', cursive;
     margin: 0px;
+    background: linear-gradient(#ffffff 0%, #d7e1ec 74%);
 }
 .container{
     display: grid;
@@ -116,30 +117,43 @@ body{
 }
 
 /* Style all font awesome icons */
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
+  
+ .iconwrapper .button{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    float: left;
+    margin: 0 5px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0,0, 0.1);
+    transition: all 0.3s ease-out;
+ }
+ .iconwrapper .button :hover{
+     width: 200px;
+ }
+
+ .iconwrapper .button .icon{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
     text-align: center;
-    text-decoration: none;
-  }
-  
-  /* Add a hover effect if you want */
-  .fa:hover {
-    opacity: 0.7;
-  }
-  
-  /* Set a specific color for each brand */
-  
-  /* Facebook */
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
-  
-  /* Twitter */
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
-  }
-  
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+}
+
+.iconwrapper .button .icon i{
+    font-size: 25px;
+    line-height: 60px;
+}
+
+.iconwrapper .button span{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+
+}
