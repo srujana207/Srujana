@@ -120,6 +120,7 @@ body{
     display: inline-block;
     height: 60px;
     width: 60px;
+    direction: ltr;
     margin: 0 5px;
     overflow: hidden;
     background: #fff;
