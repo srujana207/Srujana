@@ -129,7 +129,7 @@ body{
     box-shadow: 0px 10px 10px rgba(0, 0,0, 0.1);
     transition: all 0.3s ease-out;
  }
- .iconwrapper .button :hover{
+ .iconwrapper .button:hover{
      width: 200px;
  }
 
